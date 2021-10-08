@@ -5,8 +5,9 @@ python:
   - "3.9"
 # command to install dependencies
 install:
-  
+  - pip install -r requirements.txt
+  - pip install flake8
 
 script:
-  - bash sonar_scanner
-
+ 
+  - bash sonar_scanner.sh
